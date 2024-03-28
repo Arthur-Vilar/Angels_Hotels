@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline:none;
+    box-sizing: border-box;
+}
+
+:root{
+    --princ-color:#622574;
+    --princ-color-variation:#915da1;
+    --sec-color:#34d9db;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: arial, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #F7F5F7;
+}
+
+.max-width{
+    max-width: 1024px;
+}
+
+h1,h2,h3,h4{
+    font-family: Oxygen, sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+header img{
+    width: 25rem;
+    margin: 1.5rem 0;
+}
+
+header nav{
+    width: 100%;
+}
+
+header ul{
+    list-style: none;
+    background-color: var(--princ-color);
+    text-align: center;
+}
+
+header nav a{
+    display: block;
+    font-size: 2rem;
+    padding: 2rem ;
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover{
+    background-color:color-mix(in srgb, var(--princ-color), white 10%);
+}
+
+#desc{
+    margin: auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--princ-color);
+    padding: 3rem 0;
+}
+
+#desc img{
+    width: 7.5rem;
+    display: none;
+}
+
+#desc h1{
+    font-size: 2.6rem;
+    margin: 0 0 1.5rem;
+}
+
+#desc p{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--princ-color-variation);
+    font-family: Oxygen, sans-serif;
+    line-height: 1.5;
+}
+
+#desc button{
+    background-color: var(--sec-color);
+    color: white;
+    display: inline-block;
+    padding: 1.2rem 3rem ;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#desc button:hover{
+    background-color: color-mix(in srgb, var(--sec-color), white 30%);
+    color: rgba(0, 0, 0, 0.527);
+}
+
+#icon-content{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    gap: 3rem;
+    padding-bottom: 5rem ;
+}
+
+#icon-content h1{
+    color: var(--princ-color);
+    text-transform: uppercase;
+}
+
+.icon p, .princ-content p{
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.icon-12s{
+    width: 100%;
+}
+
+#princ{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: auto;
+    padding: 6rem 4rem;
+    gap: 8rem;
+}
+
+.princ-content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2rem;
+    width: 100%;
+}
+
+.princ-content_text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.princ-content_text h1{
+    font-size: 2.6rem;
+    letter-spacing: 5px;
+    color: var(--princ-color);
+    font-weight: 400;
+}
+
+.princ-content_text p{
+    text-align: justify;
+}
+
+.princ-12s{
+    width:100%
+}
+
+footer{
+    background-color: #26303D;
+    color: #6A7983;
+    padding: 5rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+}
+
+footer h1{
+    font-size: 2.4rem;
+}
+
+input{
+    display: block;
+    margin-bottom: 1.6rem;
+    width: 35rem;
+    padding: 1rem;
+    transition: .1s;
+}
+
+input:focus, textarea:focus{
+    padding: 1rem 1.3rem;
+    background-color: #dbdbdb;
+}
+
+label{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#form-info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+form{
+    margin: auto;
+    text-align: center;
+}
+
+form button{
+    padding: 12px 50px;
+    margin-top: 15px;
+}
+
+form button:hover{
+    background-color: #bbb;
+}
+
+span{
+    color: red;
+}
+
+textarea{
+    display: block;
+    width: 35rem;
+    resize: none;
+    padding: 1rem;
+}
+
+hr{
+    width: 90%;
+    border: 1px solid #ccc;
+}
+
+address{
+    display: flex;
+    gap: 2rem;
+}
+
+.adr-content{
+    display: flex;
+    justify-content: center;
+}
+
+.adr-content a{
+    color: #6A7983;
+    transition: .5s;
+}
+
+.adr-content a:hover{
+    color:white;
+}
+
+@media screen and (min-width:680px){
+    .princ-12m img{
+        width: 50%;
+    }
+
+    .princ-12m{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:820px){
+    header{
+        flex-direction: row;
+        max-width: 85%;
+        min-width: 80rem;
+    }
+
+    header nav{
+        text-align: right;
+    }
+
+    header ul{
+        background-color: initial;
+        display: flex;
+        justify-content: end;
+        vertical-align: bottom;
+    }
+
+    header nav a{
+        color: var(--princ-color);
+        transition-duration: .4s;
+    }
+
+    header nav a:hover{
+        background-color: color-mix(in srgb, var(--princ-color), white 60%);
+        color: white;
+    }
+
+    #desc{
+        background-color: var(--princ-color);
+        color: white;
+        max-width: 100%;
+        padding:2rem;
+        margin-bottom: 2rem;
+    }
+
+    #desc img{
+        display: block;
+    }
+
+    #desc p{
+        color: inherit;
+        text-shadow: 7px 7px 10px black;
+    }
+
+    #icon-content{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .princ-content_text h1{
+        font-size: 3rem;
+    }
+
+    .princ-content_text p{
+        font-size: 2.2rem;
+    }
+
+    .icon-6m{
+        width:calc(50% - 3rem);
+    }
+    
+    fieldset{
+        display: flex;
+        gap: 5rem;
+    }
+
+    #form-msg{
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea{
+        flex-grow: 1;
+    }
+}
+
+
+@media screen and (min-width:1000px) {
+    #desc{
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        height: 60vh;
+        background-size: cover;
+        justify-content: flex-end;
+        background-position: top;
+    }
+
+    #desc img{
+       width: 10rem; 
+    }
+
+    #desc button{
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    #desc{
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        height: 90vh;
+        background-position: center;
+        justify-content: flex-end;
+    }
+
+    #desc button{
+        margin-bottom: 5rem;
+    }
+    
+    .icon-3l{
+        width: calc(25% - 3rem);
+    }
+
+}
+
+@media screen and (min-width:1440px){
+    .max-width{
+        max-width: 1300px;
+    }
+
+    #princ{
+        flex-direction: row;
+        flex-wrap: wrap;
+    } 
+
+    .princ-6lg{
+        width: calc(50% - 4rem);
+        height: 25rem;
+    }
+
+    .princ-6lg img{
+        width: 50%;
+        height: 85%;
+    }
+
+    .princ-content_text p{
+        font-size: 1.5rem;
+    }
+}
