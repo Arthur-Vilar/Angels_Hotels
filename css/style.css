@@ -232,6 +232,7 @@ form{
 form button{
     padding: 12px 50px;
     margin-top: 15px;
+    border-radius: 5px;
 }
 
 form button:hover{
